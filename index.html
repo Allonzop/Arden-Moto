@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arden'Moto — concession et atelier moto à Charleville-Mézières</title>
+<meta name="description" content="Arden'Moto, chemin du Vivier Guyon à Charleville-Mézières. Vente, réparation et conseils, tout-terrain et route. Husqvarna, Beta, GasGas, TGB, Mash, Hyosung, QJ Motor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.jpg">
+<style>
+:root{
+  --nuit:#191C20; --nuit-2:#23272C; --acier:#3A4149; --acier-2:#6C757E;
+  --jaune:#E8D52A; --jaune-f:#B9A800; --rouge:#D81E25;
+  --gris:#F3F4F5; --gris-2:#E2E5E8; --gris-3:#C8CDD2;
+  --encre:#191C20; --encre-2:#4E565E; --encre-3:#8C949C;
+  --max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--encre);
+  font:400 17px/1.66 'Titillium Web',system-ui,-apple-system,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;line-height:.98;margin:0;letter-spacing:.012em}
+h2{font-size:clamp(34px,5vw,52px)}
+h3{font-size:25px}
+p{margin:0 0 16px}
+.eyebrow{font-family:'Titillium Web',sans-serif;font-weight:700;font-size:12.5px;
+  letter-spacing:.26em;text-transform:uppercase;color:var(--jaune-f);margin:0 0 12px}
+
+.bar{position:sticky;top:0;z-index:40;background:var(--nuit);color:#fff}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{font-family:'Bebas Neue',sans-serif;font-size:25px;letter-spacing:.04em}
+.brand i{font-style:normal;color:var(--jaune)}
+.navlinks{display:flex;gap:24px;font-size:13.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase}
+.navlinks a{text-decoration:none;color:#A8B0B8;padding:3px 0;border-bottom:2px solid transparent}
+.navlinks a:hover{color:#fff;border-color:var(--jaune)}
+
+.hero{background:var(--nuit);color:#fff;padding:62px 0 0;position:relative}
+.hero .wrap{display:grid;grid-template-columns:.92fr 1.08fr;gap:46px;align-items:center}
+.hero h1{font-size:clamp(46px,7vw,86px);color:#fff}
+.hero h1 i{font-style:normal;color:var(--jaune);display:block}
+.hero .sub{font-size:18px;color:#AEB7BF;max-width:30em;margin-top:18px;font-weight:300}
+.facts{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:16px;color:#C6CDD3;font-weight:300}
+.facts li{display:flex;gap:11px;align-items:baseline}
+.facts span{color:var(--jaune);font-size:11px}
+.cta{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;text-decoration:none;
+  font-family:'Titillium Web',sans-serif;font-weight:700;font-size:14px;letter-spacing:.09em;text-transform:uppercase;transition:.15s}
+.btn-p{background:var(--jaune);color:var(--nuit)}
+.btn-p:hover{background:#fff}
+.btn-s{border:1px solid var(--acier);color:#C6CDD3}
+.btn-s:hover{background:var(--nuit-2)}
+.heroshot{margin:0}
+.heroshot img{width:100%;height:auto}
+.heroshot figcaption{font-size:13px;color:#7C858D;padding:9px 0 26px;font-weight:300}
+
+.marques{background:var(--jaune);padding:17px 0}
+.marques .wrap{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;
+  font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.08em;color:var(--nuit)}
+
+section{padding:76px 0}
+.sec-head{max-width:46em;margin-bottom:40px}
+.sec-head p{color:var(--encre-2)}
+
+.univers{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--gris);border-bottom:4px solid var(--jaune);overflow:hidden;display:flex;flex-direction:column}
+.card .ph{height:260px;overflow:hidden;background:var(--gris-2)}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .tx{padding:22px 22px 26px}
+.card h3{margin-bottom:8px}
+.card p{font-size:15.5px;color:var(--encre-2);margin:0;font-weight:300}
+
+.atelier{background:var(--nuit);color:#fff}
+.atelier .eyebrow{color:var(--jaune)}
+.atelier h2{color:#fff}
+.acols{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.acols img{width:100%;height:auto}
+.presta{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.presta li{display:flex;gap:11px;align-items:baseline;font-size:16px;color:#C6CDD3;font-weight:300}
+.presta span{color:var(--jaune);font-size:11px}
+
+.infos{background:var(--gris)}
+.icols{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.hours{width:100%;border-collapse:collapse;font-size:16px}
+.hours td{padding:11px 0;border-bottom:1px solid var(--gris-3);color:var(--encre-2)}
+.hours td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.hours tr:last-child td{border-bottom:0}
+.hours .off td{color:var(--encre-3)}
+.contact{list-style:none;margin:20px 0 0;padding:0;font-size:16px;line-height:2.05;color:var(--encre-2)}
+.contact a{color:var(--jaune-f);font-weight:600}
+
+.aconf{display:inline-block;vertical-align:middle;margin-left:7px;padding:2px 9px;
+  border:1px dashed var(--jaune-f);border-radius:999px;color:var(--jaune-f);
+  font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.atelier .aconf{border-color:var(--jaune);color:var(--jaune)}
+
+footer{background:var(--nuit);color:#8C949C;padding:44px 0 40px;font-size:14.5px;font-weight:300}
+footer a{color:#C6CDD3}
+.fgrid{display:flex;justify-content:space-between;gap:34px;flex-wrap:wrap}
+.fbrand{font-family:'Bebas Neue',sans-serif;font-size:27px;color:#fff;letter-spacing:.04em}
+
+.demo{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--nuit);color:#fff;
+  text-decoration:none;font-weight:700;font-size:11px;letter-spacing:.15em;text-transform:uppercase;
+  padding:10px 15px;border:1px solid var(--acier)}
+.demo:hover{background:var(--jaune);color:var(--nuit);border-color:var(--jaune)}
+
+@media (max-width:980px){
+  .hero .wrap{grid-template-columns:1fr;gap:30px}
+  .univers{grid-template-columns:1fr}
+  .acols,.icols{grid-template-columns:1fr;gap:34px}
+  .navlinks{display:none}
+}
+@media (max-width:520px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  section{padding:54px 0}
+  .presta{grid-template-columns:1fr}
+  .marques .wrap{gap:16px;font-size:18px}
+}
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="wrap">
+  <div class="brand">Arden<i>'</i>Moto</div>
+  <nav class="navlinks">
+    <a href="#univers">La concession</a>
+    <a href="#atelier">L'atelier</a>
+    <a href="#infos">Horaires</a>
+  </nav>
+</div></div>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <p class="eyebrow" style="color:var(--jaune)">Charleville-Mézières · Ardennes</p>
+    <h1>Vente<br>Réparation<i>Conseils</i></h1>
+    <p class="sub">L'équipe Arden'Moto partage avec vous son expérience dans le domaine du tout-terrain et de la route. Concession et atelier, chemin du Vivier Guyon.</p>
+    <ul class="facts">
+      <li><span>▸</span> Concession depuis 2004</li>
+      <li><span>▸</span> 4,5 sur 5 sur Google, sur 88 avis</li>
+      <li><span>▸</span> Réparation et entretien toutes marques</li>
+    </ul>
+    <div class="cta">
+      <a class="btn btn-p" href="tel:+33324270223">03 24 27 02 23</a>
+      <a class="btn btn-s" href="#infos">Horaires et accès</a>
+    </div>
+  </div>
+  <figure class="heroshot">
+    <img src="concession.jpg" alt="La concession Arden'Moto, chemin du Vivier Guyon à Charleville-Mézières" width="1040" height="780">
+    <figcaption>La concession, chemin du Vivier Guyon.</figcaption>
+  </figure>
+</div></header>
+
+<div class="marques"><div class="wrap">
+  <div>Husqvarna</div><div>Beta</div><div>GasGas</div><div>TGB</div><div>Mash</div><div>Hyosung</div><div>QJ Motor</div>
+</div></div>
+
+<section id="univers"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow">La concession</p>
+    <h2>Le tout-terrain<br>et la route</h2>
+    <p>Deux mondes dans le même showroom : les machines de cross et d'enduro d'un côté, les routières et les trails de l'autre. Avec l'équipement et les pièces qui vont avec.</p>
+  </div>
+  <div class="univers">
+    <article class="card">
+      <div class="ph"><img src="showroom-tt.jpg" alt="Le rayon tout-terrain du showroom, motos Husqvarna alignées" width="1040" height="780"></div>
+      <div class="tx"><h3>Tout-terrain</h3><p>Cross, enduro et supermotard, alignés dans le showroom, prêts à partir. Husqvarna, Beta, GasGas.</p></div>
+    </article>
+    <article class="card">
+      <div class="ph"><img src="showroom-route.jpg" alt="Le rayon route du showroom, motos rouges et équipement" width="1040" height="780"></div>
+      <div class="tx"><h3>Route</h3><p>Sportives, roadsters et scooters, avec le rayon équipement juste derrière : casques, blousons, gants.</p></div>
+    </article>
+    <article class="card">
+      <div class="ph"><img src="qjmotor.jpg" alt="Les trails QJ Motor exposés devant le panneau de la marque" width="585" height="780"></div>
+      <div class="tx"><h3>Trail et voyage</h3><p>Les grosses routières de voyage, valises montées, prêtes pour la Meuse comme pour les Alpes.</p></div>
+    </article>
+  </div>
+</div></section>
+
+<section class="atelier" id="atelier"><div class="wrap">
+  <div class="acols">
+    <div>
+      <p class="eyebrow">L'atelier</p>
+      <h2>On ne vend pas<br>que du neuf</h2>
+      <p style="color:#AEB7BF;font-weight:300">L'atelier travaille toutes les marques, qu'elles viennent d'ici ou d'ailleurs, et remonte aussi les anciennes. Les six prestations ci-dessous sont celles annoncées par la concession.</p>
+      <ul class="presta">
+        <li><span>▸</span> Réparation et entretien toutes marques</li>
+        <li><span>▸</span> Préparation moteur et suspensions</li>
+        <li><span>▸</span> Nettoyage à ultrasons</li>
+        <li><span>▸</span> Réembiellage</li>
+        <li><span>▸</span> Rénovation moto ancienne</li>
+        <li><span>▸</span> Montage et équilibrage pneus</li>
+      </ul>
+      <p style="margin-top:20px;font-size:15.5px;color:#AEB7BF;font-weight:300">Les délais et les tarifs d'atelier restent à préciser avec la concession.<span class="aconf">à confirmer</span></p>
+    </div>
+    <img src="atelier-custom.jpg" alt="Une moto custom ancienne en cours de travail à l'atelier" width="585" height="780">
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="acols">
+    <img src="supermotard.jpg" alt="Un supermotard Husqvarna jaune et blanc dans le showroom" width="585" height="780">
+    <div>
+      <p class="eyebrow">En rayon</p>
+      <h2>Et tout<br>l'équipement</h2>
+      <p>Casques, blousons, gants et bottes sont au fond du showroom, à côté des machines. On essaie sur place, et on repart équipé.</p>
+      <p style="font-size:15.5px;color:var(--encre-2);font-weight:300">Les marques d'équipement et les pièces tenues en stock restent à préciser avec la concession.<span class="aconf">à confirmer</span></p>
+    </div>
+  </div>
+</div></section>
+
+<section class="infos" id="infos"><div class="wrap">
+  <div class="icols">
+    <div>
+      <p class="eyebrow">Horaires</p>
+      <h2>Quand venir</h2>
+      <table class="hours">
+        <tr class="off"><td>Lundi</td><td>Fermé</td></tr>
+        <tr><td>Mardi</td><td>9h00 – 12h00 · 14h00 – 19h00</td></tr>
+        <tr><td>Mercredi</td><td>9h00 – 12h00 · 14h00 – 19h00</td></tr>
+        <tr><td>Jeudi</td><td>9h00 – 12h00 · 14h00 – 19h00</td></tr>
+        <tr><td>Vendredi</td><td>9h00 – 12h00 · 14h00 – 19h00</td></tr>
+        <tr><td>Samedi</td><td>9h00 – 12h00 · 14h00 – 18h00</td></tr>
+        <tr class="off"><td>Dimanche</td><td>Fermé</td></tr>
+      </table>
+    </div>
+    <div>
+      <p class="eyebrow">Accès</p>
+      <h2>Nous trouver</h2>
+      <ul class="contact">
+        <li>2 chemin du Vivier Guyon<br>08000 Charleville-Mézières</li>
+        <li><a href="tel:+33324270223">03 24 27 02 23</a></li>
+        <li><a href="mailto:ardenmotos@orange.fr">ardenmotos@orange.fr</a></li>
+        <li>Parking devant la concession</li>
+      </ul>
+      <p style="margin-top:18px;color:var(--encre-2);font-size:15.5px;font-weight:300">Le numéro de rue est à trancher : la fiche Google indique 2 bis, le registre des entreprises et la page contact indiquent 2.<span class="aconf">à confirmer</span></p>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div>
+      <div class="fbrand">Arden'Moto</div>
+      <p style="margin:10px 0 0">2 chemin du Vivier Guyon, 08000 Charleville-Mézières<br>03 24 27 02 23</p>
+    </div>
+    <div><p style="margin:0">Du mardi au samedi<br>Fermé le lundi et le dimanche</p></div>
+    <div><p style="margin:0"><a href="mentions-legales.html">Mentions légales</a></p></div>
+  </div>
+</div></footer>
+
+<a class="demo" href="https://kraon.netlify.app/offre" target="_blank" rel="noopener">Démo KRAON</a>
+
+</body>
+</html>
